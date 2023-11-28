@@ -1,0 +1,182 @@
+@font-face {
+    font-family: csgofont;
+    src: url(../csgofont/cs_regular.ttf);
+}
+
+/*Titles and Text*/
+h1 {
+    font-family: csgofont;
+    font-size: 55px;
+    text-align: center;
+}
+
+.casename {
+    font-family: csgofont;
+    font-size: 20px;
+}
+
+.casename:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.casetitles {
+    height: 30px;
+}
+
+.itemdesc {
+    font-family: csgofont;
+    font-size: 20pt;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Nav*/
+nav {
+    padding-bottom: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+li {
+    font-family: csgofont;
+    font-size: 25px;
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/*Images*/
+.casespotlight {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.casefadein {
+    animation: fadeInAnimation ease-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.casefadeout {
+    animation: fadeOutAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutAnimation {
+    100% {
+        opacity: 100;
+    }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.itemsize {
+    width: 150px;
+}
+
+.randombox {
+    background-color: red;
+    border-radius: 10px;
+}
+
+/*Buttons*/
+.openbtn {
+    font-family: csgofont;
+    font-size: 20px;
+    background-color: #04a424;
+    color: white;
+    width: 8%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.openbtn:hover {
+    color: gold;
+}
+
+.openbtn:active {
+    background-color: black;
+    box-shadow: 0 2px #414141;
+    transform: translateY(3px);
+}
+
+.openbtnplacement {
+    text-align: center;
+    padding: 10px;
+}
+
+.btndisabled {
+    background-color: black;
+    color: gold;
+}
+
+/*Grid*/
+.parentgrid {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.childgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.bphbparent {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.bphbchild {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+    border: 5px solid darkorange;
+    border-radius: 10px;
+}
