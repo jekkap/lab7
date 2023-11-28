@@ -24,7 +24,7 @@ window.addEventListener("load", (e) => {
             const weaponSkin = document.getElementById("weaponSkinLoad");
             const weaponSkinDiv = document.createElement("DIV");
             const weaponSkinImg = document.createElement("IMG");
-            weaponSkinImg.classList.add("itemsize")
+            weaponSkinImg.classList.add("itemsize");
             weaponSkinImg.src = caseData[2].contains[i].image;
             weaponSkin.append(weaponSkinDiv);
             weaponSkinDiv.append(weaponSkinImg);

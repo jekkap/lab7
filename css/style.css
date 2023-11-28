@@ -39,14 +39,17 @@ nav {
 ul {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 15%;
-    margin-right: 15%;
+    
 }
 
 li {
     font-family: csgofont;
-    font-size: 25px;
+    font-size: 20pt;
     list-style: none;
+    text-decoration: underline 2px;
+    margin-left: -25%;
+    margin-right: -25%;
+    padding-right: 30px;
 }
 
 a {
@@ -102,7 +105,7 @@ a:hover {
 }
 
 .itemsize {
-    width: 150px;
+    width: 90%;
 }
 
 .randombox {
@@ -167,6 +170,12 @@ a:hover {
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
+    width: 70%;
+}
+
+.parentmove {
+    display: flex;
+    justify-content: center;
 }
 
 .bphbchild {
@@ -179,4 +188,55 @@ a:hover {
     background-color: orange;
     border: 5px solid darkorange;
     border-radius: 10px;
+}
+
+/*Mobile Design*/
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    /*Titles and Text*/
+
+    h1 {
+        font-size: 31pt;
+    }
+
+    li {
+        font-size: 18pt;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: auto;
+    }
+
+    .itemdesc {
+        font-size: 18pt;
+    }
+
+    /*Images*/
+
+    .casespotlight {
+        width: 300px;
+    }
+
+    .itemsize {
+        width: 100px;
+    }
+
+    /*Buttons*/
+
+    .openbtn {
+        width: 30%;
+        height: 40px;
+    }
+
+    /*Grid*/
+
+    .bphbchild {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

@@ -53,17 +53,6 @@ window.addEventListener("load", (e) => {
         const cs20Image = document.createElement("IMG");
         cs20Image.src = caseData[30].image;
         cs20Case.append(cs20Image);
-
-        //Populates case items on case page
-        for(i = 0; i < 8; i++) {
-            const item1 = document.getElementById("item1");
-            const item1Div = document.createElement("DIV");
-            const item1Img = document.createElement("IMG");
-            item1Img.src = caseData[2].contains[i];
-            item1.append(item1Div);
-            item1Div.append(item1Img);
-        }
-
     })
     .catch((err) => console.log("Error Loading CSGO API", err));
 })
