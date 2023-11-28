@@ -17,7 +17,7 @@ window.addEventListener("load", (e) => {
         const caseData = data;
         console.log(caseData);
         const caseWin = document.getElementById("caseWin");
-        caseWin.src = '../images/bravocase.png';
+        caseWin.src = 'images/bravocase.png';
 
         //Populates case items on case page
         for(i = 0; i < 15; i++) {
@@ -71,7 +71,7 @@ window.addEventListener("load", (e) => {
             setTimeout(function () {
                 caseOpen.disabled = false;
                 caseWin.classList.add("casefadein");
-                caseWin.src = '../images/bravocase.png';;
+                caseWin.src = 'images/bravocase.png';;
                 itemDesc.innerText = "Item description will appear here!";
                 caseWin.classList.remove("casefadeout");
                 caseOpen.classList.remove("btndisabled");
